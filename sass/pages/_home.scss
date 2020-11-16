@@ -1,0 +1,221 @@
+body{
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+.message{
+  display: none;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+
+  &--artists,
+  &--labels,
+  &--playlists{
+    width: 80%;
+  }
+}
+
+.hero{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  
+
+  &__img-heading{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__item{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+  }
+
+  &__item-img{
+    width: 25%;
+    display: grid;
+
+  }
+}
+
+.polygon{
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  clip-path: polygon(36% 62%, 100% 0, 100% 100%, 0 100%, 0 33%);
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+
+  &__overlay{
+    background: linear-gradient(to right, #00c9ff, #92fe9d);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+  }
+
+  &__img-heading{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 175px;
+    line-height: 123px; 
+    color: #fff;
+    opacity: .2;
+  }
+}
+
+.heading{
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 30px;
+  padding-bottom: 10px;
+
+  &--news{
+    color: #fff;
+    padding: 50px 0;
+  }
+
+  &--download{
+    font-size: 2.3rem;
+  }
+
+  &--dl-span{
+    display: block;
+    left: 30px;
+    position: relative;
+  }
+}
+
+.copyright{
+  font-size: .7rem;
+  font-weight: 300;
+  color: #8d8c8c;
+  letter-spacing: .5px;
+  font-family: Poppins;
+  padding: 10px 0;
+}
+
+.artists{
+  padding: 70px 0;
+  
+  &__items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__item{
+    padding: 20px 0;
+  }
+}
+
+.playlists{
+  padding: 70px 0;
+
+  &__item{
+    padding: 20px 0;
+
+    &--spotify{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.news{
+  background: #272938;
+  text-align: center;
+  position: relative;
+
+  &__bottom{
+    color: #fff;
+    width: auto;
+    height: 20%;
+    line-height: 119px;
+    text-align: left;
+    left: -60px;
+    position: relative;
+    opacity: 0.1;
+    bottom: 3px;
+    
+
+  }
+
+  &__bottom-title{
+    font-size: 176px;
+  }
+}
+
+.download{
+  padding: 50px 0;
+  text-align: center;
+
+  &__item{
+
+    &--app{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__img{
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  &__icon-text{
+    font-weight: 300;
+    font-size: .8rem;
+    letter-spacing: 1px;
+  }
+
+  &__list{
+    display: inline-flex;
+  }
+
+  &__list-item{
+    margin: 10px;
+  }
+
+  &__icon-links{
+    color: #505050;
+  }
+
+  &__icon{
+    font-size: 1.4rem;
+  }
+
+  &__google{
+    width: 40%;
+    height: 40%;
+  }
+
+}
+
+@media screen and (min-width: 668px) {
+  header,
+  main{
+    display: none;
+  }
+
+  .message{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+  }
+}

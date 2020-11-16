@@ -1,0 +1,67 @@
+.card{
+  border-radius: 20px 20px 10px 10px;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
+  max-width: 300px;
+  position: relative;
+
+  &__img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+
+  &__content{
+    padding: 20px 0 10px;
+    text-align: left;
+    font-family: Karla;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 1rem;
+    color: #000;
+  }
+
+  &__bottom{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: rgb(131, 131, 131);
+    letter-spacing: 1px;
+
+    &:before{
+      content: "";
+      display: block;
+      border-bottom: 1px solid rgb(228, 228, 228);
+      width: 80%;
+      height: 1px;
+      position: absolute;
+      top: -10px;
+    }
+  }
+
+  &__line{
+    padding: 0 15px;
+
+    &:after{
+      content: "";
+      border-left: 1px solid rgb(228, 228, 228);
+      width: 1px;
+    }
+  }
+
+  &__link{
+    color: rgb(131,131,131);
+  }
+}

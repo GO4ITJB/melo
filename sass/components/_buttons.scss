@@ -1,0 +1,32 @@
+.btn{
+  border-radius: 20px;
+  color: red;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: .2s ease;
+  display: block;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+
+
+.btn-box{
+  width: 40%;
+  padding: 20px 0;
+
+  &--artists{
+    margin: 0 auto;
+  }
+}
